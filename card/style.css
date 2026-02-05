@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+/* FLEX WRAP CONTAINER */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  width: 420px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -20px,
+    rgba(0, 0, 0, 0.3) 0px 20px 40px -30px;
+}
+
+/* TOP */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.top h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.top button {
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.available {
+  background-color: #03a685;
+}
+
+.unavailable {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* CENTER */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.center img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.center h4 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.center h5 {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.center h6 {
+  font-size: 14px;
+  color: #0570dd;
+  margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skill {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.skill h4 {
+  border: 1px solid #ccc;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+/* DESCRIPTION */
+.center p {
+  font-size: 15px;
+  margin: 10px 0;
+  opacity: 0.8;
+}
+
+/* BUTTON */
+.neu-button {
+  margin: 15px 0 20px;
+  padding: 12px 35px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  box-shadow:
+    inset 4px 4px 10px #bcbcbc,
+    inset -4px -4px 10px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.neu-button:hover {
+  background-color: #03a685;
+  color: #fff;
+}
